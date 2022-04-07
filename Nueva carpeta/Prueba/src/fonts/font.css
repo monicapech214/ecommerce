@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Gabrielle';
+	src: url('Gabrielle/Gabrielle.eot');
+	src: local('â˜º'), url('Gabrielle/Gabrielle.woff') format('woff'), url('Gabrielle/Gabrielle.ttf') format('truetype'), url('Gabrielle/Gabrielle.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Incised Black';
+	src: url('Incised Black/Incised Black.eot');
+	src: local('â˜º'), url('Incised Black/Incised Black.woff') format('woff'), url('Incised Black/Incised Black.ttf') format('truetype'), url('Incised Black/Incised Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JI-Bedaub';
+	src: url('JI-Bedaub/JI-Bedaub.eot');
+	src: local('â˜º'), url('JI-Bedaub/JI-Bedaub.woff') format('woff'), url('JI-Bedaub/JI-Bedaub.ttf') format('truetype'), url('JI-Bedaub/JI-Bedaub.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JI-Drapey';
+	src: url('JI-Drapey/JI-Drapey.eot');
+	src: local('â˜º'), url('JI-Drapey/JI-Drapey.woff') format('woff'), url('JI-Drapey/JI-Drapey.ttf') format('truetype'), url('JI-Drapey/JI-Drapey.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JI-Embows';
+	src: url('JI-Embows/JI-Embows.eot');
+	src: local('â˜º'), url('JI-Embows/JI-Embows.woff') format('woff'), url('JI-Embows/JI-Embows.ttf') format('truetype'), url('JI-Embows/JI-Embows.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JI-Hasted';
+	src: url('JI-Hasted/JI-Hasted.eot');
+	src: local('â˜º'), url('JI-Hasted/JI-Hasted.woff') format('woff'), url('JI-Hasted/JI-Hasted.ttf') format('truetype'), url('JI-Hasted/JI-Hasted.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'JI-Import';
+	src: url('JI-Import/JI-Import.eot');
+	src: local('â˜º'), url('JI-Import/JI-Import.woff') format('woff'), url('JI-Import/JI-Import.ttf') format('truetype'), url('JI-Import/JI-Import.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Plain Germanica';
+	src: url('Plain Germanica/Plain Germanica.eot');
+	src: local('â˜º'), url('Plain Germanica/Plain Germanica.woff') format('woff'), url('Plain Germanica/Plain Germanica.ttf') format('truetype'), url('Plain Germanica/Plain Germanica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sports World';
+	src: url('Sports World/Sports World-Regular.eot');
+	src: local('â˜º'), url('Sports World/Sports World-Regular.woff') format('woff'), url('Sports World/Sports World-Regular.ttf') format('truetype'), url('Sports World/Sports World-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+
+<title>FabAz¡!</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link href="src/roboto.css" rel="stylesheet">
+<link href="src/fonts/fonts.css" rel="stylesheet" type="text/css" />
+<link href="src/style.css" rel="stylesheet" type="text/css" />
+<link href="src/jquery/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<script src="src/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="src/jquery/jquery-ui.min.js" type="text/javascript"></script>
+<script src="src/jquery/jquery.ui.touch-punch.js"></script>
+<script src="src/html2canvas.js" type="text/javascript"></script>
+<script src="src/init.js" type="text/javascript"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://bootswatch.com/4/simplex/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark  ">
+			
+			<img height="80%" src="src/img/Fab.PNG" alt="left_icon" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<font face="univers" size="6" color="red" 
+			<h1>EDICION DE PLANTILLA¡!</h1> </font><br>
+			<br>
+			<br>
+			
+		
+		</button>
+
+	
+	  </nav>
+	
+	  <div class="ctf_container" align="left">
+	
+			<div class="ctf_canvas_container letter" align="right">
+				<div class="ctf_canvas_orientation ctf_canvas_orientation1" align="left">
+					<div class="ctf_canvas ctf_canvas1">
+						<img class="ctf_bg" src="" alt="" />
+						<span><img class="ctf_watermark" src="src/img/img_p.png" alt="" /></span>
+						<div class="ctf_print_mask"></div>
+					</div>
+				</div>
+				<div class="ctf_canvas_orientation ctf_canvas_orientation2">
+					<div class="ctf_canvas ctf_canvas2">
+						<img class="ctf_bg" src="" alt="" />
+						<span><img class="ctf_watermark" src="src/img/img_l.png" alt="" /></span>
+						<div class="ctf_print_mask"></div>
+					</div>
+				</div>		
+			</div>
+			<div class="ctf_options" align="center">
+				<div class="ctf_options_div">
+					
+					<h4>FabAz¡!</h4>
+					<div class="ctf_font">	
+							FUENTE: <select></select>
+					</div>	
+					<div class="ctf_font_size">	
+							TAMAÑO DE FUENTE: <select></select>
+					</div><div class="ctf_font_weight"><br>
+							NEGRITAS : <button class="ctf_bold_btn">N</button>
+					</div><br>
+					<div class="ctf_color">	
+							COLOR DE FUENTE: <span></span>
+					</div><br>
+					<div class="ctf_align">	
+							ALINEACION:
+						<button class="ctf_align_left_btn">
+							<img height="100%" src="src/img/left.png" alt="left_icon" />
+						</button>
+						<button class="ctf_align_center_btn">
+							<img height="100%" src="src/img/center.png" alt="center_icon" />
+						</button>
+						<button class="ctf_align_right_btn">
+							<img height="100%" src="src/img/right.png" alt="right_icon" />
+						</button>
+					</div><br>
+					<div class="ctf_show_line">	
+						Show Line: <input class="ctf_show_line_rb1" name="line" type="radio" class="radio"  /> SI <input class="ctf_show_line_rb2" name="line" type="radio" class="radio"  /> No
+		
+					</div>
+					<div class="ctf_text_new">
+							<input type="text" class="text ctf_new_text"  />
+						<input type="submit" class="submit ctf_new_text_btn" value="AGREGAR TEXTO" />
+					</div><br>
+					<div class="ctf_image_new">	
+							AGREGAR IMAGEN: <br /><input type="file" class="file" name="file" />
+					</div><br>
+					
+					<div class="ctf_print">	
+						<button class="ctf_print_btn ctf_btn">GUARDAR</button>
+					</div>
+					
+		
+		
+		
+				</div>
+				<div class="ctf_canvas_preload"></div>
+			</div>		
+
+
+
+
+
+
+	 
+
+	
+	
+	
+		<div class="ctf_canvas_preload"></div>
+	</div>	
+	
+	<div class="ctf_options">
+		<div class="ctf_canvas_orientation ctf_canvas_orientation1">
+			<div class="ctf_canvas ctf_canvas1">
+				<img class="ctf_bg" src="" alt="" />
+				<span><img class="ctf_watermark" src="" alt="" /></span>
+				<div class="ctf_print_mask"></div>
+			</div>
+		</div>
+		<div class="ctf_canvas_orientation ctf_canvas_orientation2">
+			<div class="ctf_canvas ctf_canvas2">
+				<img class="ctf_bg" src="" alt="" />
+				<span><img class="ctf_watermark" src="" alt="" /></span>
+				<div class="ctf_print_mask"></div>
+			</div>
+		</div>		
+	</div>
+</div>
+<div class="ctf_print_canvas letter"></div>
+<div class="ctf_download_canvas"></div>
+<div class="ctf_download_form">
+	<form action="src/download.php" method="POST" target="ctf_upload_frame" >	
+		<input type="hidden" name="download" />
+		<input type="hidden" name="download2" />
+	</form>
+	<iframe id="ctf_upload_frame" name="upload_frame" src="" width="0px" height="0px" frameborder="0" ></iframe>
+</div>
+
+</body>
+</html>
