@@ -34,22 +34,14 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Damas</a></li>
-                                <li><a class="dropdown-item" href="#!">Caballeros</a></li>
-                                <li><a class="dropdown-item" href="#!">Niños</a></li>
-                                <li><a class="dropdown-item" href="#!">Niñas</a></li>
+                                <li><a class="dropdown-item" href="icashop.php">Damas</a></li>
+                                <li><a class="dropdown-item" href="caballeros.php">Caballeros</a></li>
+                                <li><a class="dropdown-item" href="ninos.php">Niños</a></li>
+                                
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
+                   
                 </div>
             </div>
         </nav>
@@ -73,6 +65,11 @@
         <p class="m-0 text-center text-black" >adicionales en la venta por catálogo de calzado y accesorios.</p>
         <p class="m-0 text-center text-black" >¡TU ÉXITO ES NUESTRO COMPROMISO! </p>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
         <!-- Footer-->
         <footer class="p-3 mb-2 bg-info text-white">
             <div class="container"><p class="m-0 text-center text-white">Derechos Reservados &copy; IcaShop 2022</p></div>

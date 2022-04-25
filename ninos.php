@@ -1,8 +1,4 @@
-<?php session_start();
-//recuperar cookies
-if(isset($_COOKIE['nombre']))
-echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,7 +23,7 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.php">Iniciar Sesión</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Iniciar Sesión</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acerca de</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,27 +62,27 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
         </header>
         <!-- Section-->
         <section class="py-5">
-        <p>Damas</p>
+        <p>Niños</p>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
                            
-                            <img class="card-img-top" src="img\zapatos1.jpg" id="mujer1" alt="..." />
+                            <img class="card-img-top" src="img\zapato15.jpg"  alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer1">Zapato comodo moda dama</h5>
+                                    <h5 class="fw-bolder">Tenis para niño talla 12</h5>
                                     <!-- Product price-->
-                                    <label  id="preciomujer1">$300</label>
+                                    <label>$300</label>
                                    
                                 </div>
                             </div>
                             <!-- Product actions-->
-                          <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Zapato comodo moda dama">
+                          <form action="ninos.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Tenis para niño talla 12">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
                          <input type="hidden" name ="txtprecioproducto" value="300">
                          <input type="submit" value ="Agregar" name="btnAgregar">
@@ -98,25 +94,25 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos2.jpg" id="mujer2" alt="..." />
+                            <img class="card-img-top" src="img\zapato16.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer2">Tacones negros y blancos</h5>
+                                    <h5 class="fw-bolder">Tenis vernase color cafe</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                        
                                     </div>
                                     <!-- Product price-->
-                                    <label  id="preciomujer2">$350</label>
+                                    <label>$500</label>
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Tacones negros y blancos">
+                            <form action="ninos.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Tenis vernase color cafe">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
-                         <input type="hidden" name ="txtprecioproducto" value="350">
+                         <input type="hidden" name ="txtprecioproducto" value="500">
                          <input type="submit" value ="Agregar" name="btnAgregar">
                             </form>
                         </div>
@@ -126,19 +122,19 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos.3.jpg" id="mujer3" alt="..." />
+                            <img class="card-img-top" src="img\zapato17.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer3">Sandalias de moda dama</h5>
+                                    <h5 class="fw-bolder">Calzado malla transpirables blancos</h5>
                                     <!-- Product price-->
-                                    <label  id="preciomujer3">$200</label>
+                                    <label>$200</label>
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Sandalias de moda dama">
+                            <form action="caballeros.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Calzado malla transpirables blancos">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
                          <input type="hidden" name ="txtprecioproducto" value="200">
                          <input type="submit" value ="Agregar" name="btnAgregar">
@@ -148,23 +144,23 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="img\zapato4.jpg" id="mujer4" alt="..." />
+                            <img class="card-img-top" src="img\zapato18.jpg"  alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer4">Zapatos azules de vestir Dama</h5>
+                                    <h5 class="fw-bolder">Baby soft bottom</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         
                                     </div>
                                     <!-- Product price-->
-                                    <label  id="preciomujer4">$250</label>
+                                    <label>$250</label>
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Zapatos azules de vestir Dama">
+                            <form action="ninos.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Baby soft bottom">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
                          <input type="hidden" name ="txtprecioproducto" value="250">
                          <input type="submit" value ="Agregar" name="btnAgregar">
@@ -176,21 +172,21 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos5.jpg" id="mujer5" alt="..." />
+                            <img class="card-img-top" src="img\zapato19.jpg"alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer5">Tacones cafés elegantes</h5>
+                                    <h5 class="fw-bolder" >Zapato comodo cuero negro para niño</h5>
                                     <!-- Product price-->
-                                    <label  id="preciomujer5">$275</label>
+                                    <label>$220</label>
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Tacones cafés elegantes">
+                            <form action="nino.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Zapato comodo cuero negro para niño">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
-                         <input type="hidden" name ="txtprecioproducto" value="275">
+                         <input type="hidden" name ="txtprecioproducto" value="220">
                          <input type="submit" value ="Agregar" name="btnAgregar">
                             </form>
                         </div>
@@ -198,77 +194,25 @@ echo "<script> alert('Bienvenido: ". $_COOKIE['nombre']."'); </script>";
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos6.jpg" id="mujer6" alt="..." />
+                            <img class="card-img-top" src="img\zapato20.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer6">Tacones #10</h5>
+                                    <h5 class="fw-bolder" >Zapato color cafe patito #10</h5>
                                     <!-- Product price-->
-                                    <label  id="preciomujer6">$380</label>
+                                    <label >$300</label>
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Tacones #10">
+                            <form action="ninos.php" method="POST">
+                              <input type="hidden" name ="txtproducto" value= "Zapato color cafe patito #10">
                          <input type="number" name="cant" value="1" style="width;50px;"><br>
-                         <input type="hidden" name ="txtprecioproducto" value="380">
+                         <input type="hidden" name ="txtprecioproducto" value="300">
                          <input type="submit" value ="Agregar" name="btnAgregar">
                             </form>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos7.jpg" id="mujer7" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer7">Sandalias de dama cuero</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        
-                                    </div>
-                                    <!-- Product price-->
-                                    <label  id="preciomujer7">$370</label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Sandalias de dama cuero">
-                         <input type="number" name="cant" value="1" style="width;50px;"><br>
-                         <input type="hidden" name ="txtprecioproducto" value="370">
-                         <input type="submit" value ="Agregar" name="btnAgregar">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img\zapatos8.jpg" id="mujer8" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder" id="descripcionmujer8">Zapatos de dama plataforma</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                       
-                                    </div>
-                                    <!-- Product price-->
-                                    <label  id="preciomujer8">$260</label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <form action="icashop.php" method="POST">
-                              <input type="hidden" name ="txtproducto" value= "Zapatos de dama plataforma">
-                         <input type="number" name="cant" value="1" style="width;50px;"><br>
-                         <input type="hidden" name ="txtprecioproducto" value="260">
-                         <input type="submit" value ="Agregar" name="btnAgregar">
-                            </form>
+                    </div>                       
                             <?php
            if(isset($_REQUEST["btnAgregar"]))
            {

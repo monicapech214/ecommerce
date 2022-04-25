@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -53,23 +55,72 @@
                     <p class="lead fw-normal text-white-50 mb-0">Los zapatos de tu estilo!</p>
                 </div>
             </div>
+            
         </header>
+        
+        <?php
+        $total = 0;
+        echo "<h3>Carrito de Compras:</h3>";
+      if(isset($_SESSION["carrito"]))
+      {
+          foreach($_SESSION["carrito"] as $indice => $arreglo)
+          {
+              echo "<hr>Producto: <strong>".$indice."</strong><br>";
+             $total += $arreglo["cant"] * $arreglo["precio"];
+              foreach($arreglo as $key => $value)
+              {
+                  echo $key .": " . $value . "<br>";
+
+              }
+              echo"<a href='mostrarmujer.php?quitar=$indice'>Quitar de carrito</a>";
+          } 
+          echo '<br>';
+          echo '<br>';
+          echo '<br>';
+          echo ' <form action="mostrarmujer.php" method="POST">';
+          echo '<div style="text-align: center;">';
+          echo '<input style="background: #02AC66" type="submit" value ="Pagar" name="btnPagar">';
+          echo '</div>';
+          echo '</form>';
+          if(isset($_REQUEST["btnPagar"]))
+          {
+          echo "<h3>El total de su compra es:$ $total </h3>";
+          }
+          echo '<a href ="mostrarmujer.php?vaciar=true">Vaciar el carrito</a>';
+         
+        }
+      else
+      {
+          echo"<script>alert('El carrito esta vacio');</script>";
+         
+         ?>
+            <a href="icashop.php">Regresar</a>
+          
+          <?php
+      }
+if(isset($_REQUEST["vaciar"]))
+{
+    session_destroy();
+   
+   print "<script>window.setTimeout(function() { window.location = '/ecommerce/mostrarmujer.php' }, 3000);</script>";
+
+}
+if(isset($_REQUEST["quitar"]))
+{
+    $producto=$_REQUEST["quitar"];
+    unset($_SESSION["carrito"][$producto]);
+    print "<script>window.setTimeout(function() { window.location = '/ecommerce/mostrarmujer.php' }, 3000);</script>";
+}
+       ?>
         <!-- Section-->
         <section class="py-5">
-        <h1 class="m-0 text-center text-black">Misión y Visión de IcaShop </h1>
-        <br>
-        <h2 class="m-0 text-center text-black">Misión</h2>
-        <br>
-        <p class="m-0 text-center text-black" > Comercializar calzado con el mejor servicio, moda y calidad para generar valor a nuestros clientes, colaboradores, proveedores y accionistas. </p>
-        <br>
-        <h2 class="m-0 text-center text-black">Visión</h2>
-        <br>
-        <p class="m-0 text-center text-black" > Ser el grupo comercializador de calzado preferido de los clientes por la calidad de nuestro servicio e innovación.</p>
-        </section>
-        <br>
-        <br>
-        <br>
-        <br>
+       
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
         <!-- Footer-->
         <footer class="p-3 mb-2 bg-info text-white">
             <div class="container"><p class="m-0 text-center text-white">Derechos Reservados &copy; IcaShop 2022</p></div>
